@@ -43,11 +43,11 @@ Follow these steps to set up and run the application locally:
     php artisan db:seed
 
 ## Usage
-• Start the Laravel development server:
+1. Start the Laravel development server:
     ```bash
     php artisan serve
-• Open your web browser and visit http://127.0.0.1:8000 to view the application.
-• Use the navigation links to manage authors and books (CRUD operations).
+2. Open your web browser and visit http://127.0.0.1:8000 to view the application.
+3. Use the navigation links to manage authors and books (CRUD operations).
     
 
 
