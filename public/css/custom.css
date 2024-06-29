@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 767px) {
+    .mt-title{
+        margin-top: 50px;
+    }
+    .center-custom{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .start-custom{
+        text-align: left;
+    }
+    .end-custom-big{
+        text-align: right;
+    }
+}
+@media screen and (max-width: 991px) {
+    .margin-y{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+
+.container-custom-width{
+    width: 50%;
+}
+
+.author-dp{
+    width: 100px;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
