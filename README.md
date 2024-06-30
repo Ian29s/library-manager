@@ -30,10 +30,11 @@ Follow these steps to set up and run the application locally:
     ```bash
     composer install
 3. Copy .env.example to .env and configure your environment variables:
-    ```bash
-    for windows:
+    windows:
+    ```bash  
     copy .env.example .env
-    for linux/IOS etc.
+
+    linux/IOS etc.
     ```bash
     cp .env.example .env
 4. Generate a new application key:
