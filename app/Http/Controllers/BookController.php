@@ -11,12 +11,14 @@ class BookController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
+        $sort = $request->input('sort', 'asc');
 
         $books = Book::query()
             ->where('title', 'LIKE', "%{$search}%")
             ->orWhereHas('author', function ($query) use ($search) {
                 $query->where('name', 'LIKE', "%{$search}%");
             })
+            ->orderBy('title', $sort)
             ->get();
 
         return view('books.index', compact('books'));

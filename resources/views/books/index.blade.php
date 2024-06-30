@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="container mt-5">
@@ -16,6 +17,8 @@
             </div>
             <div class="col-sm-8 order-3 order-sm-2">
                 <div class="input-group">
+                    <a href="{{ route('books.index', array_merge(request()->all(), ['sort' => 'asc'])) }}" class="btn btn-outline-primary"><i class="bi bi-sort-alpha-up"></i></a>
+                    <a href="{{ route('books.index', array_merge(request()->all(), ['sort' => 'desc'])) }}" class="btn btn-outline-primary"><i class="bi bi-sort-alpha-up-alt"></i></a>
                     <input type="text" name="search" value="{{ request('search') }}" class="form-control" placeholder="Search books...">
                     <button type="submit" class="btn btn-success">Search</button>
                     <a href="{{ route('books.index') }}" class="btn btn-secondary">Show Full List</a>

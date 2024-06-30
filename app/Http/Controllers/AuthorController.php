@@ -11,9 +11,13 @@ class AuthorController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
+        $sort = $request->input('sort', 'asc');
 
         $authors = Author::query()
-            ->where('name', 'LIKE', "%{$search}%")
+            ->when($search, function ($query, $search) {
+                return $query->where('name', 'LIKE', "%{$search}%");
+            })
+            ->orderBy('name', $sort)
             ->get();
 
         return view('authors.index', compact('authors'));
