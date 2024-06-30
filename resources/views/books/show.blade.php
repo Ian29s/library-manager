@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <a href="{{ asset('books') }}">Return to Author List</a>
+        <a href="{{ asset('books') }}">Return to Book List</a>
         <div class="px-5 py-5 shadow">
             <h1 class="text-center">Book Details</h1><hr>
             <p><strong>Title:</strong> {{ $book->title }}</p>

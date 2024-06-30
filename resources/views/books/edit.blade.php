@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <a href="{{ asset('books') }}">Return to Author List</a>
+        <a href="{{ asset('books') }}">Return to Book List</a>
         <div class="px-5 py-5 shadow">
             <h1 class="text-center">Edit Book</h1>
             <form action="{{ route('books.update', $book) }}" method="POST" style="min-width: 250px">
