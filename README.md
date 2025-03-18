@@ -18,7 +18,7 @@ This application manages a list of books and their authors, implementing CRUD (C
 Follow these steps to set up and run the application locally:
 
 ### Prerequisites
-- PHP >= 9
+- PHP >= 8
 - Composer installed globally
 
 ## Installation
